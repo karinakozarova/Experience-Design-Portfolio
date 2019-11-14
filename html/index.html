@@ -6,42 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Hello, world!</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <title> Home </title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: Raleway, sans-serif;
+            overflow-x: hidden;
+        }
+
+        #page-content {
+            flex: 1 0 auto;
+        }
+
+        #sticky-footer {
+            flex-shrink: none;
+        }
+
+        .social-links ul li {
+            padding: 100px;
+        }
+
+        body {
+            background: linear-gradient(to right, RGBA(194, 249, 112, .9), RGBA(51, 174, 255, .9));
+        }
+
+        header {
+            z-index: 1000;
+            padding-bottom: 100px;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery img {
+            max-width: 90%;
+            max-height: 50%;
+        }
+
+        .project-text {
+            padding-top: 20px;
+        }
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column">
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Carousel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="../logo/logo.png" width="60" alt="logo"/>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"> My projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#"> My experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact me</a>
                 </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <ul id="social-links"
+                class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-linkedin"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-github"></i></a></li>
+            </ul>
         </div>
     </nav>
 </header>
-<h1>Hello, world!</h1>
+<div id="page-content">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <h1 class="font-weight-light mt-4 text-white"> Hey!</h1>
+                <p class="lead text-white" style="display:inline-block;vertical-align:middle;">
+                    This is my project for my Experience design class at
+                    <img src="http://www.visacare.nl/wp-content/uploads/2015/04/logo-fontys-400x400.png"
+                         alt="fontys logo" style="vertical-align:middle;height: 60px;"/>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
 
+    <div class="row gallery">
+        <div class="col-sm-6 col-md-4">
+            <a href="https://homepages.cae.wisc.edu/~ece533/images/airplane.png">
+                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" class="rounded-circle"
+                     alt="Project first weeks">
+            </a>
+            <h5 class="project-text"> Assignments Weeks 1 and 2</h5>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="https://homepages.cae.wisc.edu/~ece533/images/airplane.png">
+                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" class="rounded-circle"
+                     alt="Project 3,4,5 week">
+            </a>
+            <h5 class="project-text"> Assignment Weeks 3, 4 and 5</h5>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="https://homepages.cae.wisc.edu/~ece533/images/airplane.png">
+                <img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" class="rounded-circle"
+                     alt="Project week 7,8">
+            </a>
+            <h5 class="project-text"> Assignment Week 7 and 8</h5>
+        </div>
+    </div>
+
+
+    <footer id="sticky-footer fixed-bottom" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-sm-8 col-xs-6">
+                        <small> Copyright &copy; Karina Kozarova 2019 </small>
+                    </div>
+                    <div class="col-1 col-sm-2 col-xs-4">
+                        <small> <a href="" style="float: right;"> Site map</a> </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
