@@ -7,34 +7,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/experience.css">
 
     <title> My experience </title>
-    <style>
-        body,
-        html {
-            height: 100%;
-            font-family: Raleway, sans-serif;
-        }
-
-        #page-content {
-            flex: 1 0 auto;
-        }
-
-        body {
-            background: linear-gradient(to right, RGBA(194, 249, 112, .9), RGBA(51, 174, 255, .9));
-        }
-
-        header {
-            z-index: 1000;
-            padding-bottom: 100px;
-        }
-
-        .row {
-            padding: 20px;
-        }
-    </style>
 </head>
 <body class="d-flex flex-column">
 <header>
@@ -72,9 +52,9 @@
 
     <div class="row">
         <div class="col-8 offset-2">
-            <div class="progress" style="height: 60px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                     style="width:99%; background-color: #344fff">
+            <div class="progress">
+                <div id="python" class="progress-bar progress-bar-striped progress-bar-animated active"
+                     role="progressbar">
                     <h4> Python</h4>
                 </div>
             </div>
@@ -83,9 +63,9 @@
 
     <div class="row">
         <div class="col-8 offset-2">
-            <div class="progress" style="height: 60px;">
+            <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                     style="width:70%;background-color: #03b300">
+                     id="clang">
                     <h4> C</h4>
                 </div>
             </div>
@@ -94,9 +74,9 @@
 
     <div class="row">
         <div class="col-8 offset-2">
-            <div class="progress" style="height: 60px;">
+            <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                     style="width:80%;">
+                     id="java">
                     <h4> Java </h4>
                 </div>
             </div>
@@ -105,9 +85,8 @@
 
     <div class="row">
         <div class="col-8 offset-2">
-            <div class="progress" style="height: 60px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                     style="width:90%;background-color: #aab32a">
+            <div class="progress">
+                <div id="js" class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar">
                     <h4> JavaScript </h4>
                 </div>
             </div>
@@ -116,9 +95,9 @@
 
     <div class="row">
         <div class="col-8 offset-2">
-            <div class="progress" style="height: 60px;">
+            <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                     style="width:80%;background-color: rgba(31,31,31,0.86)">
+                     id="robotics">
                     <h4> Robotics</h4>
                 </div>
             </div>
@@ -127,9 +106,9 @@
 
     <div class="row">>
         <div class="col-8 offset-2">
-            <div class="progress" style="height: 60px;">
+            <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                     style="width:60%; background-color: #b30b43">
+                     id="css">
                     <h4> CSS</h4>
                 </div>
             </div>
@@ -145,7 +124,7 @@
                         <small class="text-white"> Copyright &copy; Karina Kozarova 2019 </small>
                     </div>
                     <div class="col-1 col-sm-2 col-xs-4">
-                        <small> <a href="" style="float: right;"> Site map</a> </small>
+                        <small> <a href="sitemap.xml" id="sitemap"> Site map</a> </small>
                     </div>
                 </div>
             </div>
@@ -154,9 +133,17 @@
 </div>
 <!-- Optional JavaScript -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+<script>$(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+});</script>
 </body>
 </html>

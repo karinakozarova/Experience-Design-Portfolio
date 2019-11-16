@@ -8,45 +8,13 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
 
     <title> Home </title>
-    <style>
-        body,
-        html {
-            height: 100%;
-            font-family: Raleway, sans-serif;
-        }
-
-        body {
-            background: linear-gradient(to right, RGBA(194, 249, 112, .9), RGBA(51, 174, 255, .9));
-        }
-
-        header {
-            z-index: 1000;
-        }
-
-        body {
-            background:
-                    linear-gradient(
-                            rgba(0, 0, 1, 0.7),
-                            rgba(0, 0, 0, 0.5)
-                    ),
-                    url(../resources/karina-chill.jpg);
-            background-size: cover;
-        }
-
-        section {
-            position: absolute;
-            top: 50%;
-            left: 70%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-        }
-
-    </style>
 </head>
 <body class="d-flex flex-column">
 <header>
@@ -80,34 +48,28 @@
 <div id="page-content">
 
     <section>
-        <h1 class="display-2"> Hi! My name is Karina  👩‍💻  </h1>
+        <h1 class="display-2"> Hi! My name is Karina 👩‍💻 </h1>
         <h2> I am a backend software developer, a national ice hockey 🏒 competitor, the coordinator behind
-            <img src="../resources/bulgaria.png" alt="bulgarian flag" style="max-height: 70px;">'s largest hackathon - Hack TUES and a
-            <img src="../resources/netflix.png"  alt="netflix logo" style="max-height: 80px"> lover </h2>
+            <img src="../resources/bulgaria.png" id="bg-flag" alt="bulgarian flag">'s largest hackathon - Hack TUES and
+            a
+            <img src="../resources/netflix.png" id="netflix-logo" alt="netflix logo"> lover </h2>
         <br>
-        <a type="button"  href="contact.html" class="btn btn-raised btn-success btn-lg">Contact me</a>
+        <a type="button" href="contact.html" class="btn btn-raised btn-success btn-lg">Contact me</a>
     </section>
-
-    <footer id="sticky-footer fixed-bottom" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-sm-8 col-xs-6">
-                        <small class="text-white"> Copyright &copy; Karina Kozarova 2019 </small>
-                    </div>
-                    <div class="col-1 col-sm-2 col-xs-4">
-                        <small> <a href="" style="float: right;"> Site map</a> </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 <!-- Optional JavaScript -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+<script>$(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+});</script>
 </body>
 </html>

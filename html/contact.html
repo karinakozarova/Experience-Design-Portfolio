@@ -7,41 +7,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/contact.css">
 
     <title> Contact me </title>
-    <style>
-        body,
-        html {
-            height: 100%;
-            font-family: Raleway, sans-serif;
-        }
-
-        #page-content {
-            flex: 1 0 auto;
-        }
-
-        #sticky-footer {
-            flex-shrink: none;
-        }
-
-        .social-links ul li {
-            padding: 100px;
-        }
-
-        body {
-            background: linear-gradient(to right, RGBA(194, 249, 112, .9), RGBA(51, 174, 255, .9));
-        }
-
-        header {
-            z-index: 1000;
-            padding-bottom: 100px;
-        }
-        .higher-input{
-            height: 50px;
-        }
-    </style>
 </head>
 <body class="d-flex flex-column">
 <header>
@@ -74,28 +47,31 @@
 </header>
 
 <div id="page-content">
-
-    <form class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1" style="background-color: white;padding: 2% 5%;">
-        <h3 style="padding-top: 30px;"> Send me a message from here:</h3>
+    <form class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1" id="form">
+        <h3> Send me a message from here:</h3>
         <div class="form-group higher-input">
             <label for="exampleFormControlInput1">Your email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="form-group higher-input">
             <label for="formGroupExampleInput"> Email title</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="What are you contacting me about?">
+            <input type="text" class="form-control" id="formGroupExampleInput"
+                   placeholder="What are you contacting me about?">
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Your message to me here.."></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
+                      placeholder="Your message to me here.."></textarea>
         </div>
-        <div class="form-check" style="padding-bottom: 40px;">
+        <div class="form-check checkmark">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-                I agree to sharing my information. For more GDPR info, <a href="https://www.privacypolicies.com/blog/gdpr-consent-examples/"> click here </a>
+                I agree to sharing my information. For more GDPR info, <a
+                    href="https://www.privacypolicies.com/blog/gdpr-consent-examples/"> click here </a>
             </label>
         </div>
-        <button type="button" class="btn btn-block btn-raised btn-primary" style="padding: 12px;"> Submit</button> <br>
+        <button type="button" class="btn btn-block btn-raised btn-primary"> Submit</button>
+        <br>
     </form>
 
     <footer id="sticky-footer fixed-bottom" class="py-4 bg-dark text-white-50">
@@ -106,7 +82,7 @@
                         <small class="text-white"> Copyright &copy; Karina Kozarova 2019 </small>
                     </div>
                     <div class="col-1 col-sm-2 col-xs-4">
-                        <small> <a href="" style="float: right;"> Site map</a> </small>
+                        <small> <a href="sitemap.xml" id="sitemap"> Site map</a> </small>
                     </div>
                 </div>
             </div>
@@ -115,9 +91,17 @@
 </div>
 <!-- Optional JavaScript -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+<script>$(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+});</script>
 </body>
 </html>

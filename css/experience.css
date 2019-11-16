@@ -1,0 +1,36 @@
+.row {
+    padding: 20px;
+}
+
+.progress {
+    height: 60px;
+}
+
+#python {
+    width: 99%;
+    background-color: #344fff;
+}
+
+#clang {
+    width: 70%;
+    background-color: #03b300;
+}
+
+#java {
+    width: 80%;
+}
+
+#js {
+    width: 90%;
+    background-color: #aab32a;
+}
+
+#robotics {
+    width: 80%;
+    background-color: rgba(31, 31, 31, 0.86)
+}
+
+#css {
+    width: 60%;
+    background-color: #b30b43
+}

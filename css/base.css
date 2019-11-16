@@ -1,0 +1,22 @@
+body,
+html {
+    height: 100%;
+    font-family: Raleway, sans-serif;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+body {
+    background: linear-gradient(to right, RGBA(194, 249, 112, .9), RGBA(51, 174, 255, .9));
+}
+
+header {
+    z-index: 1000;
+    padding-bottom: 100px;
+}
+
+#sitemap {
+    float: right;
+}
