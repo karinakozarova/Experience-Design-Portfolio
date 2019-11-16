@@ -5,17 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title> Home </title>
+    <title> Contact me </title>
     <style>
         body,
         html {
             height: 100%;
             font-family: Raleway, sans-serif;
+        }
+
+        #page-content {
+            flex: 1 0 auto;
+        }
+
+        #sticky-footer {
+            flex-shrink: none;
+        }
+
+        .social-links ul li {
+            padding: 100px;
         }
 
         body {
@@ -24,28 +36,21 @@
 
         header {
             z-index: 1000;
+            padding-bottom: 100px;
         }
 
-        body {
-            background:
-                    linear-gradient(
-                            rgba(0, 0, 1, 0.7),
-                            rgba(0, 0, 0, 0.5)
-                    ),
-                    url(../resources/karina-chill.jpg);
-            background-size: cover;
-        }
-
-        section {
-            position: absolute;
-            top: 50%;
-            left: 70%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            color: white;
+        .gallery {
             text-align: center;
         }
 
+        .gallery img {
+            max-width: 90%;
+            max-height: 50%;
+        }
+
+        .project-text {
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body class="d-flex flex-column">
@@ -61,7 +66,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
@@ -71,20 +76,14 @@
                     <a class="nav-link" href="experience.html"> My experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact me</a>
+                    <a class="nav-link active" href="contact.html">Contact me</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
-<div id="page-content">
 
-    <section>
-        <h1 class="display-2"> Hi! My name is Karina  👩‍💻  </h1>
-        <h2> I am a backend software developer, a national ice hockey 🏒 competitor, the coordinator behind <img src="../resources/bulgaria.png" style="max-height: 70px;">'s largest hackathon - Hack TUES and a <img src="../resources/netflix.png" style="max-height: 80px"> lover </h2>
-        <br>
-        <a type="button"  href="contact.html" class="btn btn-raised btn-success btn-lg">Contact me</a>
-    </section>
+<div id="page-content">
 
     <footer id="sticky-footer fixed-bottom" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
