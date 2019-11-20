@@ -7,12 +7,8 @@ body {
     background-size: cover;
 }
 
+
 section {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
 }
@@ -23,4 +19,31 @@ section {
 
 #netflix-logo {
     max-height: 80px;
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 1.2rem !important;
+    }
+    .display-2, h1 {
+        font-size: 1.3rem !important;
+    }
+
+    #bg-flag {
+        max-height: 40px;
+    }
+
+    #netflix-logo {
+        max-height: 40px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    section {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
